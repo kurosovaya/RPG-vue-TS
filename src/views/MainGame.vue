@@ -5,13 +5,14 @@ import PlayerComponent from '@/components/PlayerComponent.vue';
 // let canvals = document.getElementById("canvas")
 // let ctx = canvals.getContext('2d')
 
+
 </script>
 
 <template>
     <div>
         <!-- <canvas width="0" height="0" class="canvas" id="canvas">!!!</canvas> -->
         <PlayerComponent></PlayerComponent>
-		<GameLevel></GameLevel>
+		<!-- <GameLevel></GameLevel> -->
     </div>
 </template>
 
