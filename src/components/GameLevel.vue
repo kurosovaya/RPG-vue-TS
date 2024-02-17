@@ -1,6 +1,15 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import LevelCell from './LevelCell.vue';
+import Rectangle from "pixi.js"
+import { Application } from "vue3-pixi";
+import textureUrl from "@/assets/pxArt3.png";
+
+// const hitArea = new Rectangle(0, 0, 64, 64);
+
+function onClick() {
+  console.log('sprite clicked!');
+}
 
 const cellList = ref([])
 
@@ -19,9 +28,12 @@ function generateField() {
 </script>
 
 <template>
-    <div class="main_layer">
-        <LevelCell v-for="cell in cellList" :position_x="cell.x" :position_y="cell.y"></LevelCell>
-    </div>
+  <!-- <Application :width="640" :height="480">
+    <container>
+      <sprite :texture="textureUrl" :hit-area="hitArea" @click="onClick" />
+    </container>
+  </Application> -->
+  <div></div>
 </template>
 
 <style scoped>

@@ -31,7 +31,7 @@ onBeforeUnmount(() => {
 
 <template>
     <div :style="{left: x+'px', top: y+'px'}">
-        <img src="../assets/cover-256.png">
+        <img src="@/assets/cover-256.png">
     </div>
 </template>
 
